@@ -1,4 +1,5 @@
 %define unstablever .1-31-dev
+%define oname GameHub
 
 Name:           gamehub
 Version:        0.13.1
@@ -29,3 +30,18 @@ BuildRequires:  pkgconfig(x11)
 BuildRequires:  pkgconfig(xtst)
 BuildRequires:  pkgconfig(manette-0.2)
 
+%description
+GameHub allows to view, download, install, run and uninstall games from supported sources.
+
+%prep
+%setup -qn %{oname}-%{version}%{unstablever}
+
+%build
+%meson
+%meson_build
+
+%install
+%meson_install
+
+%files
+#{_bindir}/%{name}
