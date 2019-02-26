@@ -45,4 +45,12 @@ GameHub allows to view, download, install, run and uninstall games from supporte
 %meson_install
 
 %files
-#{_bindir}/%{name}
+%{_bindir}/com.github.tkashkin.gamehub
+%{_bindir}/com.github.tkashkin.gamehub-overlayfs-helper
+%{_datadir}applications/com.github.tkashkin.gamehub.desktop
+%{_datadir}/com.github.tkashkin.gamehub/compat/dosbox/windowed.conf
+%{_datadir}/glib-2.0/schemas/com.github.tkashkin.gamehub.gschema.xml
+%{_iconsdir}/hicolor/*/apps/com.github.tkashkin.gamehub.svg
+%{_datadir}/locale/*/LC_MESSAGES/com.github.tkashkin.gamehub.mo
+%{_datadir}/metainfo/com.github.tkashkin.gamehub.appdata.xml
+%{_datadir}/polkit-1/actions/com.github.tkashkin.gamehub.policy
