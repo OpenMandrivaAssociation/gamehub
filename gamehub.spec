@@ -12,9 +12,9 @@ URL:            https://tkashkin.tk/projects/gamehub/
 Source0:        https://github.com/tkashkin/GameHub/archive/0.13.1-31-dev/%{oname}-%{version}%{unstablever}.tar.gz
 
 BuildRequires:  meson
-BuildRequires:  vala
-BuildRequires:  vapigen
 BuildRequires:  ninja
+BuildRequires:  vala
+BuildRequires:  pkgconfig(vapigen)
 BuildRequires:  pkgconfig(granite)
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(glib-2.0)
