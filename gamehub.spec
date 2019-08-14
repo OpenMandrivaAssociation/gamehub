@@ -1,15 +1,15 @@
-%define unstablever -100-dev
-%define badunstablever .100.dev
+%define unstablever -16-dev
+%define badunstablever .16.dev
 %define oname GameHub
 
 Name:           gamehub
-Version:        0.13.1
+Version:        0.14.2
 Release:        0%{badunstablever}
 Summary:        Unified library for all your games, written in Vala using GTK+3
 License:        GPLv3
 Group:          Games
 URL:            https://tkashkin.tk/projects/gamehub/
-Source0:        https://github.com/tkashkin/GameHub/archive/0.13.1-100-dev/%{oname}-%{version}%{unstablever}.tar.gz
+Source0:        https://github.com/tkashkin/GameHub/archive/%{version}%{unstablever}/%{oname}-%{version}%{unstablever}.tar.gz
 
 BuildRequires:  meson
 BuildRequires:  ninja
