@@ -1,5 +1,5 @@
-%define unstablever -16-dev
-%define badunstablever .16.dev
+%define unstablever -41-dev
+%define badunstablever .41.dev
 %define oname GameHub
 
 Name:           gamehub
