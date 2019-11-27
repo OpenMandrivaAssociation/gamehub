@@ -1,9 +1,9 @@
-%define unstablever -41-dev
-%define badunstablever .41.dev
+%define unstablever -7-dev
+%define badunstablever .7.dev
 %define oname GameHub
 
 Name:           gamehub
-Version:        0.14.2
+Version:        0.15.0
 Release:        0%{badunstablever}
 Summary:        Unified library for all your games, written in Vala using GTK+3
 License:        GPLv3
@@ -45,6 +45,7 @@ GameHub allows to view, download, install, run and uninstall games from supporte
 %meson_install
 
 %files
+%{_bindir}/gamehub
 %{_bindir}/com.github.tkashkin.gamehub
 %{_bindir}/com.github.tkashkin.gamehub-overlayfs-helper
 %{_datadir}/applications/com.github.tkashkin.gamehub.desktop
