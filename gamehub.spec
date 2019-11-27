@@ -1,9 +1,9 @@
-%define unstablever -41-dev
-%define badunstablever .41.dev
+%define unstablever -7-dev
+%define badunstablever .7.dev
 %define oname GameHub
 
 Name:           gamehub
-Version:        0.14.2
+Version:        0.15.0
 Release:        0%{badunstablever}
 Summary:        Unified library for all your games, written in Vala using GTK+3
 License:        GPLv3
