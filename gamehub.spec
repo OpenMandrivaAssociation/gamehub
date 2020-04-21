@@ -55,3 +55,4 @@ GameHub allows to view, download, install, run and uninstall games from supporte
 %{_datadir}/locale/*/LC_MESSAGES/com.github.tkashkin.gamehub.mo
 %{_datadir}/metainfo/com.github.tkashkin.gamehub.appdata.xml
 %{_datadir}/polkit-1/actions/com.github.tkashkin.gamehub.policy
+%{_datadir}/com.github.tkashkin.gamehub/tweaks/*
