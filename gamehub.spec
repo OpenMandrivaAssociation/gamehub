@@ -1,15 +1,18 @@
-%define unstablever -2-dev
-%define badunstablever .2.dev
+%define short_version   0.16.0
+%define dev_version     %{short_version}-2-dev
+
 %define oname GameHub
 
 Name:           gamehub
-Version:        0.16.0
-Release:        0%{badunstablever}
+Version:        %{short_version}.2
+Release:        1
 Summary:        Unified library for all your games, written in Vala using GTK+3
 License:        GPLv3
 Group:          Games
 URL:            https://tkashkin.tk/projects/gamehub/
-Source0:        https://github.com/tkashkin/GameHub/archive/%{version}%{unstablever}/%{oname}-%{version}%{unstablever}.tar.gz
+#Source0:        https://github.com/tkashkin/GameHub/archive/%{version}%{unstablever}/%{oname}-%{version}%{unstablever}.tar.gz
+
+Source0:        https://github.com/tkashkin/GameHub/archive/%{dev_version}/%{oname}-%{dev_version}.tar.gz
 
 BuildRequires:  meson
 BuildRequires:  ninja
@@ -35,7 +38,7 @@ BuildRequires:  pkgconfig(manette-0.2)
 GameHub allows to view, download, install, run and uninstall games from supported sources.
 
 %prep
-%setup -qn %{oname}-%{version}%{unstablever}
+%setup -qn %{oname}-%{dev_version}
 
 %build
 %meson
