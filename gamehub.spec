@@ -38,7 +38,7 @@ BuildRequires:  pkgconfig(manette-0.2)
 GameHub allows to view, download, install, run and uninstall games from supported sources.
 
 %prep
-%setup -qn %{oname}-%{version}%{unstablever}
+%setup -qn %{oname}-%{dev_version}
 
 %build
 %meson
