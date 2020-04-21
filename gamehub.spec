@@ -12,7 +12,7 @@ Group:          Games
 URL:            https://tkashkin.tk/projects/gamehub/
 #Source0:        https://github.com/tkashkin/GameHub/archive/%{version}%{unstablever}/%{oname}-%{version}%{unstablever}.tar.gz
 
-Source0:        https://github.com/tkashkin/GameHub/archive/%{dev_version}/%{oname}-%{version}.tar.gz
+Source0:        https://github.com/tkashkin/GameHub/archive/%{dev_version}/%{oname}-%{dev_version}.tar.gz
 
 BuildRequires:  meson
 BuildRequires:  ninja
