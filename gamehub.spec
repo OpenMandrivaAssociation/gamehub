@@ -1,10 +1,10 @@
-%define short_version   0.16.0
-%define dev_version     %{short_version}-2-dev
+%define short_version   0.16.1
+%define dev_version     %{short_version}-6-dev
 
 %define oname GameHub
 
 Name:           gamehub
-Version:        %{short_version}.2
+Version:        %{short_version}.6
 Release:        1
 Summary:        Unified library for all your games, written in Vala using GTK+3
 License:        GPLv3
@@ -39,6 +39,7 @@ GameHub allows to view, download, install, run and uninstall games from supporte
 
 %prep
 %setup -qn %{oname}-%{dev_version}
+%autopatch -p1
 
 %build
 %meson
