@@ -13,6 +13,7 @@ URL:            https://tkashkin.tk/projects/gamehub/
 #Source0:        https://github.com/tkashkin/GameHub/archive/%{version}%{unstablever}/%{oname}-%{version}%{unstablever}.tar.gz
 
 Source0:        https://github.com/tkashkin/GameHub/archive/%{dev_version}/%{oname}-%{dev_version}.tar.gz
+Patch0:         fix-meson.patch
 
 BuildRequires:  meson
 BuildRequires:  ninja
@@ -39,6 +40,7 @@ GameHub allows to view, download, install, run and uninstall games from supporte
 
 %prep
 %setup -qn %{oname}-%{dev_version}
+%autopatch -p1
 
 %build
 %meson
