@@ -1,10 +1,10 @@
-%define short_version   0.16.2
-%define dev_version     %{short_version}-1-dev
+%define short_version   0.16.3
+%define dev_version     %{short_version}-2-master
 
 %define oname GameHub
 
 Name:           gamehub
-Version:        %{short_version}.1
+Version:        %{short_version}.2
 Release:        1
 Summary:        Unified library for all your games, written in Vala using GTK+3
 License:        GPLv3
