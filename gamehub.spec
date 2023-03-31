@@ -5,7 +5,7 @@
 
 Name:           gamehub
 Version:        %{short_version}.2
-Release:        1
+Release:        2
 Summary:        Unified library for all your games, written in Vala using GTK+3
 License:        GPLv3
 Group:          Games
