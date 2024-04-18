@@ -5,7 +5,7 @@
 
 Name:           gamehub
 Version:        %{short_version}.2
-Release:        2
+Release:        3
 Summary:        Unified library for all your games, written in Vala using GTK+3
 License:        GPLv3
 Group:          Games
@@ -21,10 +21,10 @@ BuildRequires:  pkgconfig(vapigen)
 BuildRequires:  pkgconfig(granite)
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(glib-2.0)
-BuildRequires:  pkgconfig(webkit2gtk-4.0)
+BuildRequires:  pkgconfig(webkit2gtk-4.1)
 BuildRequires:  pkgconfig(json-glib-1.0)
 BuildRequires:  pkgconfig(gee-0.8)
-BuildRequires:  pkgconfig(libsoup-2.4)
+BuildRequires:  pkgconfig(libsoup-3.0)
 BuildRequires:  pkgconfig(sqlite3)
 BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:  pkgconfig(polkit-gobject-1)
