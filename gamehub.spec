@@ -35,7 +35,8 @@ BuildRequires:  pkgconfig(xtst)
 BuildRequires:  pkgconfig(manette-0.2)
 
 %description
-GameHub allows to view, download, install, run and uninstall games from supported sources.
+GameHub allows to view, download, install, run and uninstall games
+from supported sources.
 
 %prep
 %setup -qn %{oname}-%{dev_version}
